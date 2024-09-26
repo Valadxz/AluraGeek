@@ -1,0 +1,584 @@
+:root {
+    --bg-color: #27292a;
+    --color-1: #8C0375;
+    --color-2: #C004D9;
+    --color-3: #9303A6;
+    --color-4: #5D04D9;
+    --color-5: #03318C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-4);
+    color: #fff;
+    height: 232px;
+}
+footer p{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 138px;
+    margin: 0;
+}
+.detalle-producto {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.detalle-producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos generales para el modal */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: var(--bg-color);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    color: var(--color-4);
+}
+.modal span{
+    color: var(--color-2);
+}
+.modal img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+/* Estilos para el título */
+.modal h2 {
+    margin: 0;
+    text-align: center;
+    color: var(--color-2);
+    padding-bottom: 20px;
+}
+
+/* Estilos para cerrar el modal */
+.close {
+    color: var(--color-1);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+footer span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 16px;
+    text-align: center;
+
+}
+.footer-content h2 {
+    margin: 0;
+    color: var(--color-2);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-2);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nav {
+    background-color: var(--color-4);
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2rem;
+    display: flex;
+}
+@keyframes movimiento-horizontal {
+    0%, 100% {
+        opacity: 1; /* El texto es visible */
+    }
+    50% {
+        opacity: 0; /* El texto se desvanece */
+    }
+}
+
+.nav h1 {
+    font-size: 24px;
+    color: var(--color-2);
+
+    display: inline-block;
+    animation: movimiento-horizontal 2s ease-in-out infinite alternate;
+}
+
+.nav-logo {
+    width: 138px;
+}
+
+.main-banner {
+    background-image: url(../images/banner-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+    border-radius: 23px;
+    margin: 2rem auto;
+    padding: 80px 60px;
+    width: 95%;
+  }
+  
+.main-banner span{
+    color: var(--color-2);
+}
+  .main-banner h6 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  
+  .main-banner h4 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  .main-banner h4 em {
+    font-style: normal;
+    color: var(--color-1);
+  }
+  
+.contenedor {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    padding: 2rem;
+    background-color: #1f2122;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.titulo-lista {
+    font-size: 24px;
+    color: var(--color-2);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--color-4);
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px var(--color-4) solid;
+}
+
+.items-contenedor {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: #27292a;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.item img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+.item h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: var(--color-2);
+    text-align: left;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px var(--color-4);
+}
+
+.item span {
+    color: var(--color-2);
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.item ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style-type: none;
+}
+
+.item ul li {
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item ul li i {
+    font-size: 17px;
+    margin-left: 5px;
+    color: var(--color-2);
+    cursor: pointer;
+}
+
+
+.formulario {
+    padding: 1rem;
+    border-left: 2px var(--color-1) slid;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #27292a;
+    border-radius: 15px;
+}
+
+.formulario label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.formulario input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1f2122;
+    color: #fff;
+    border: 1px var(--color-2) solid;
+}
+
+.formulario input::placeholder {
+    color: #666;
+}
+
+.formulario .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.formulario .main-button,
+.formulario .cancel-button {
+    background-color: var(--color-2);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+}
+
+.formulario .cancel-button {
+    background-color: #FF3D3D;
+}
+
+.formulario .main-button:hover {
+    background-color: var(--color-4);
+}
+
+.buscador {
+    margin-left: auto; 
+}
+
+.buscador-input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f2122;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid var(--color-2);
+    padding: 0.5rem 2rem;
+}
+
+.buscador-container { 
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.buscador-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-2);
+}
+
+.buscador-input::placeholder {
+    color: #666;
+}
+
+.buscador-input:focus {
+    border-color: var(--color-3);
+}
+
+
+@media (max-width: 768px) {
+   .nav {
+        padding: 1.5rem;
+        height: auto;
+    }
+
+    .nav .logo img {
+        width: 80px; /* Ajustar el tamaño del logo */
+    }
+
+    .nav h1 {
+        font-size: 20px; /* Ajustar el tamaño del texto */
+    }
+    .main-banner{
+        font-size: 24px;
+
+        text-align: center;
+    }
+    .main-banner h4{
+        font-size: 2rem;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .items-contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .item {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .formulario {
+        padding: 1.5rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .formulario form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .formulario input {
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .formulario .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .formulario .main-button,
+    .formulario .cancel-button {
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+    }
+    .lista{
+        padding: 0;
+    }
+    .titulo-lista {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0;
+        
+    }
+
+    .buscador-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .modal-content {
+        width: 90%; /* Ancho del modal en dispositivos más pequeños */
+        padding: 15px; /* Reducir el padding */
+    }
+
+    .modal h2 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño para el título */
+    }
+
+    .modal img {
+        max-width: 100%; /* Asegura que la imagen no sobrepase el contenedor */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .nav h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .main-banner{
+        font-size: 24px;
+
+        text-align: center;
+    }
+    .main-banner h4{
+        font-size: 2rem;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .items-contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .item {
+        height: auto;
+    }
+
+    .formulario {
+        padding: 2rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .formulario form {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .formulario input {
+        padding: 12px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .formulario .button-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .formulario .main-button,
+    .formulario .cancel-button {
+        padding: 14px;
+        width: 48%;
+        text-align: center;
+    }
+
+    .titulo-lista {
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .buscador-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}

@@ -29,12 +29,14 @@ footer {
     color: #fff;
     height: 232px;
 }
-footer p{
+
+footer p {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
 }
+
 .footer-content {
     display: flex;
     align-items: center;
@@ -44,6 +46,7 @@ footer p{
     width: 138px;
     margin: 0;
 }
+
 .detalle-producto {
     display: none;
     padding: 20px;
@@ -71,13 +74,13 @@ footer p{
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* Contenido del modal */
 .modal-content {
     background-color: var(--bg-color);
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -85,14 +88,17 @@ footer p{
     border-radius: 8px;
     color: var(--color-4);
 }
-.modal span{
+
+.modal span {
     color: var(--color-2);
 }
-.modal img{
+
+.modal img {
     width: 80%;
     margin: 0 auto;
     display: block;
 }
+
 /* Estilos para el título */
 .modal h2 {
     margin: 0;
@@ -125,6 +131,7 @@ footer span {
     text-align: center;
 
 }
+
 .footer-content h2 {
     margin: 0;
     color: var(--color-2);
@@ -149,26 +156,29 @@ a {
     width: 100%;
     height: 96px;
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 2rem;
-    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
+
 @keyframes movimiento-horizontal {
-    0%, 100% {
-        opacity: 1; /* El texto es visible */
+
+    0%,
+    100% {
+        opacity: 1;
     }
+
     50% {
-        opacity: 0; /* El texto se desvanece */
+        opacity: 0;
     }
 }
 
 .nav h1 {
     font-size: 24px;
     color: var(--color-2);
-
     display: inline-block;
     animation: movimiento-horizontal 2s ease-in-out infinite alternate;
+    text-shadow: 0px 0px 5px rgba(192, 4, 217, 0.7), 0px 0px 20px rgba(192, 4, 217, 0.4);
 }
 
 .nav-logo {
@@ -184,29 +194,30 @@ a {
     margin: 2rem auto;
     padding: 80px 60px;
     width: 95%;
-  }
-  
-.main-banner span{
+}
+
+.main-banner span {
     color: var(--color-2);
 }
-  .main-banner h6 {
+
+.main-banner h6 {
     font-size: 20px;
     color: #fff;
     font-weight: 400;
     margin-bottom: 25px;
-  }
-  
-  .main-banner h4 {
+}
+
+.main-banner h4 {
     font-size: 45px;
     text-transform: uppercase;
     margin-bottom: 25px;
-  }
-  
-  .main-banner h4 em {
+}
+
+.main-banner h4 em {
     font-style: normal;
     color: var(--color-1);
-  }
-  
+}
+
 .contenedor {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
@@ -216,6 +227,8 @@ a {
     margin-bottom: 2rem;
     width: 95%;
     margin: 2rem auto;
+
+    box-shadow: 0px 0px 5px rgba(192, 4, 217, 0.7), 0px 0px 20px rgba(192, 4, 217, 0.4);
 }
 
 .titulo-lista {
@@ -225,6 +238,8 @@ a {
     padding: 1rem;
     text-align: center;
     border-bottom: 2px solid var(--color-4);
+
+    text-shadow: 0px 0px 5px rgba(192, 4, 217, 0.7), 0px 0px 20px rgba(192, 4, 217, 0.4);
 }
 
 .lista {
@@ -251,6 +266,8 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     justify-content: space-between;
+
+    box-shadow: 0px 0px 5px rgba(192, 4, 217, 0.7), 0px 0px 20px rgba(192, 4, 217, 0.4);
 }
 
 .item:hover {
@@ -311,7 +328,7 @@ a {
 
 .formulario {
     padding: 1rem;
-    border-left: 2px var(--color-1) slid;
+    border-left: 2px var(--color-1) solid;
 }
 
 .formulario form {
@@ -320,6 +337,8 @@ a {
     padding: 30px;
     background-color: #27292a;
     border-radius: 15px;
+
+    box-shadow: 0px 0px 5px rgba(192, 4, 217, 0.7), 0px 0px 20px rgba(192, 4, 217, 0.4);
 }
 
 .formulario label {
@@ -369,33 +388,48 @@ a {
 }
 
 .buscador {
-    margin-left: auto; 
+    margin-left: auto;
+}
+
+.buscador-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.texto-movimiento {
+    text-shadow: 0px 0px 5px rgba(93, 4, 217, 0.7), 0px 0px 50px rgba(93, 4, 217, 0.4);
 }
 
 .buscador-input {
-    padding: 10px;
+    padding: 10px 10px 10px 40px;
+    /* Espacio a la izquierda para el ícono */
     border: none;
     border-radius: 10px;
     background-color: #1f2122;
     color: #fff;
     font-size: 16px;
     border: 2px solid var(--color-2);
-    padding: 0.5rem 2rem;
-}
-
-.buscador-container { 
-    display: flex;
-    align-items: center;
-    position: relative;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .buscador-icon {
     position: absolute;
-    left: 10px;
+    /* Posición absoluta dentro del contenedor */
+    left: 15px;
+    /* Ajusta este valor para centrar el ícono dentro del input */
     top: 50%;
+    /* Centrado vertical */
     transform: translateY(-50%);
+    /* Centrado vertical */
     color: var(--color-2);
+    pointer-events: none;
+    /* Ignorar clics en el ícono */
 }
+
 
 .buscador-input::placeholder {
     color: #666;
@@ -406,27 +440,145 @@ a {
 }
 
 
+/* Estilos para el modal de información de productos */
+#modal-producto {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: #151515;
+}
+
+#modal-producto .modal-content {
+    padding: 20px;
+    background-color: #151515;
+    border-radius: 5px;
+    color: #fff;
+    font-family: monospace;
+}
+
+#modal-producto span {
+    color: var(--color-2);
+}
+
+#modal-descripcion {
+    text-align: justify;
+}
+
+#modal-producto .modal-body {
+    display: flex;
+    /* Alineación en fila para imagen y texto */
+    align-items: center;
+}
+
+#modal-producto img {
+    border: 2px solid var(--color-1);
+    background-color: #000;
+    box-shadow: 0px 0px 5px rgba(93, 4, 217, 0.7), 0px 0px 50px rgba(93, 4, 217, 0.4);
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+#modal-producto h2 {
+    text-shadow: 0px 0px 5px rgba(192, 4, 217, 0.7), 0px 0px 20px rgba(192, 4, 217, 0.4);
+    color: var(--color-2);
+    text-align: center;
+}
+
+#modal-producto .modal-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#modal-producto .modal-texto p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Estilo para el botón de cerrar */
+#modal-producto .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fakeMenu {
+    height: 25px;
+    background-color: #bbb;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.fakeButtons {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.fakeClose {
+    background-color: #ff3b47;
+    border-color: #9d252b;
+}
+
+.fakeMinimize {
+    background-color: #ffc100;
+    border-color: #9d802c;
+}
+
+.fakeZoom {
+    background-color: #00d742;
+    border-color: #049931;
+}
+
+.fakeScreen {
+    background-color: #151515;
+    padding: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    font-family: monospace;
+}
+
 @media (max-width: 768px) {
-   .nav {
+    .nav {
         padding: 1.5rem;
         height: auto;
     }
 
     .nav .logo img {
-        width: 80px; /* Ajustar el tamaño del logo */
+        width: 80px;
+        /* Ajustar el tamaño del logo */
     }
 
     .nav h1 {
-        font-size: 20px; /* Ajustar el tamaño del texto */
+        font-size: 20px;
+        /* Ajustar el tamaño del texto */
     }
-    .main-banner{
+
+    .main-banner {
         font-size: 24px;
 
         text-align: center;
     }
-    .main-banner h4{
+
+    .main-banner h4 {
         font-size: 2rem;
     }
+
     .contenedor {
         display: grid;
         grid-template-columns: 1fr;
@@ -474,14 +626,16 @@ a {
         width: 100%;
         text-align: center;
     }
-    .lista{
+
+    .lista {
         padding: 0;
     }
+
     .titulo-lista {
         font-size: 20px;
         text-align: center;
         margin: 10px 0;
-        
+
     }
 
     .buscador-input {
@@ -489,20 +643,32 @@ a {
         padding: 10px;
         font-size: 14px;
     }
+
     .modal-content {
-        width: 90%; /* Ancho del modal en dispositivos más pequeños */
-        padding: 15px; /* Reducir el padding */
+        width: 90%;
+        /* Ancho del modal en dispositivos más pequeños */
+        padding: 15px;
+        /* Reducir el padding */
     }
 
     .modal h2 {
-        font-size: 1.5em; /* Tamaño de fuente más pequeño para el título */
+        font-size: 1.5em;
+        /* Tamaño de fuente más pequeño para el título */
     }
 
     .modal img {
-        max-width: 100%; /* Asegura que la imagen no sobrepase el contenedor */
-        height: auto; /* Mantener la proporción de la imagen */
+        max-width: 100%;
+        /* Asegura que la imagen no sobrepase el contenedor */
+        height: auto;
+        /* Mantener la proporción de la imagen */
     }
 
+    .modal-producto {
+        width: 80%;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -516,18 +682,22 @@ a {
         margin: 0;
     }
 
-    .main-banner{
+    .main-banner {
         font-size: 24px;
 
         text-align: center;
     }
-    .main-banner h4{
+
+    .main-banner h4 {
         font-size: 2rem;
     }
+
     .contenedor {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
+
+        text-shadow: 0px 0px 10px rgba(93, 4, 217, 0.7), 0px 0px 20px rgba(93, 4, 217, 0.4);
     }
 
     .items-contenedor {
@@ -581,4 +751,9 @@ a {
         padding: 10px;
         font-size: 16px;
     }
+
+
+#modal-producto .modal-texto {
+    margin: 5px 0;
+}
 }

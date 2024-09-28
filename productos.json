@@ -1,58 +1,44 @@
 [
   {
-    "id": 1727307882092,
-    "nombre": "Iphone",
-    "precio": 18000,
-    "descripcion": "iPhone 15 Pro Max. Forjado en titanio y equipado con el revolucionario chip A17 Pro, un Botón de Acción personalizable y el sistema de cámaras más potente en un iPhone.",
-    "imagen": "assets/images/uploads/1727307881475.png"
+    "id": 1727489991570,
+    "nombre": "Funko Shrek",
+    "precio": 900,
+    "descripcion": "Figura coleccionable de la marca Funko, representa al personaje de la película o serie de la que se trata. Articulo de coleccionista",
+    "imagen": "assets/images/uploads/1727489991561.png"
   },
   {
-    "id": 1727308811971,
-    "nombre": "PS5",
-    "precio": 10000,
-    "descripcion": "Descripción: La consola PS5® Slim libera nuevas posibilidades de juego. Experimenta una carga ultrarrápida con un SSD de velocidad ultra alta, una inmersión más profunda con soporte para retroalimentación háptica, disparadores adaptativos y audio 3D.2",
-    "imagen": "assets/images/uploads/1727308811966.png"
+    "id": 1727490067486,
+    "nombre": "Funko Burro",
+    "precio": 900,
+    "descripcion": "Figura coleccionable de la marca Funko, representa al personaje de la película o serie de la que se trata. Articulo de coleccionista",
+    "imagen": "assets/images/uploads/1727490067481.png"
   },
   {
-    "id": 1727317508480,
+    "id": 1727490305509,
+    "nombre": "Funko Dragón 5 cabezas",
+    "precio": 799,
+    "descripcion": "Figura coleccionable de la marca Funko, representa al personaje de la película o serie de la que se trata. Articulo de coleccionista",
+    "imagen": "assets/images/uploads/1727490305495.png"
+  },
+  {
+    "id": 1727490354300,
+    "nombre": "Funko Maga Oscura",
+    "precio": 499,
+    "descripcion": "Figura coleccionable de la marca Funko, representa al personaje de la película o serie de la que se trata. Articulo de coleccionista",
+    "imagen": "assets/images/uploads/1727490354298.png"
+  },
+  {
+    "id": 1727490430035,
+    "nombre": "Yugioh Legendary Decks 2 Yugi, Kaiba, Joey ",
+    "precio": 780,
+    "descripcion": "Contenido (135 cartas): CARTAS ESPECIALES: Dark Burning Magic (Secret Rare) Dark Burning Attack (Secret Rare) Eternal Soul (Secret Rare) Token (Yami Yugi & Dark Magician) (Ultra Rare) Token (Seto Kaiba & Blue-Eyes White Dragon) (Ultra Rare) Token (Joey Wheeler & Red-Eyes B. Dragon) (Ultra Rare)",
+    "imagen": "assets/images/uploads/1727490430033.png"
+  },
+  {
+    "id": 1727491378140,
     "nombre": "Nintendo Switch",
-    "precio": 4800,
-    "descripcion": "Disfruta de tus juegos favoritos en casa o en cualquier lugar con una vibrante pantalla OLED. Conecta el sistema a tu televisor para una experiencia de juego tradicional o juega en modo portátil en una vibrante pantalla OLED de 7 pulgadas. ",
-    "imagen": "assets/images/uploads/1727317508476.png"
-  },
-  {
-    "id": 1727317575277,
-    "nombre": "Xbox Series X",
-    "precio": 9000,
-    "descripcion": "Con tu consola Xbox Series tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos.",
-    "imagen": "assets/images/uploads/1727317575276.png"
-  },
-  {
-    "id": 1727317730622,
-    "nombre": "Samsung S24",
-    "precio": 18000,
-    "descripcion": "Con su potente procesador y memoria RAM de 12 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.",
-    "imagen": "assets/images/uploads/1727317730616.png"
-  },
-  {
-    "id": 1727329165803,
-    "nombre": "Rzer Blade 14",
-    "precio": 72000,
-    "descripcion": "Razer - Blade 14 - Portátil para juegos de 14- QHD + 240 Hz - AMD Ryzen 9 8945HS - NVIDIA GeForce RTX 4070 - 32 GB de RAM - 1 TB SSD",
-    "imagen": "assets/images/uploads/1727329165789.png"
-  },
-  {
-    "id": 1727338195341,
-    "nombre": "Razer Viper Mini",
-    "precio": 400,
-    "descripcion": "Creado para superar los límites de los juegos ultraligeros, el Razer Viper Mini adopta un formato más pequeño, pero sigue siendo igual de grande en términos de rendimiento.",
-    "imagen": "assets/images/uploads/1727338195337.png"
-  },
-  {
-    "id": 1727338345651,
-    "nombre": "Playstation Portal Remote",
-    "precio": 5000,
-    "descripcion": "Accede a los juegos de tu PS5 desde cualquier lugar de tu hogar con el PlayStation Portal Remote Player, que te permite jugar sin necesidad de un televisor. Disfruta de tu colección de juegos para PS5 y PS4 instalados en tu consola.",
-    "imagen": "assets/images/uploads/1727338345647.png"
+    "precio": 6000,
+    "descripcion": "Este paquete incluye la consola Nintendo Switch, la base de Nintendo Switch de color negro y los controles Joy-Con izquierdo y derecho de color azul y rojo respectivamente. También incluye todo lo que necesitas para empezar.",
+    "imagen": "assets/images/uploads/1727491378135.png"
   }
 ]

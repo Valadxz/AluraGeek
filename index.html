@@ -26,25 +26,15 @@
             <img src="assets/images/heart.gif" class="nav-logo" alt="">
             <h1 class="texto-movimiento"> AluraGeek</h1>
         </a>
-        <div class="buscador text-center">
-            <div class="buscador-container">
-                <input type="text" placeholder="Buscar productos..." class="buscador-input">
-                <i class="fa-solid fa-magnifying-glass buscador-icon"></i>
-            </div>
-        </div>
+       
     </nav>
-
-    <!--
-    <div class="main-banner">
-        <div class="header-text">
-            <h6>Bienvenido a <span>AluraGeek</span></h6>
-            <h4><em>Explora</em> nuestros productos</h4>
-            <div class="main-button">
-                <a href="#productos">Ver más</a>
-            </div>
+    
+    <div class="buscador text-center">
+        <div class="buscador-container">
+            <input type="text" placeholder="Buscar productos..." class="buscador-input">
         </div>
     </div>
-    -->
+    
     
     <div class="contenedor" id="productos">
         <div class="lista">
@@ -68,22 +58,34 @@
             </form>
         </div>
     </div>
-<!-- Modal para mostrar la información del producto -->
-<div id="modal-producto" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="modal-titulo"></h2>
-        <img id="modal-imagen" src="" alt="Producto" />
-        <p id="modal-precio"></p>
-        <p id="modal-descripcion"></p>
+    
+    
+
+    <!-- Modal para mostrar la información del producto -->
+    <div id="modal-producto" class="modal-producto">
+        <div class="fakeMenu">
+            <div class="fakeButtons fakeClose" id="close-producto"></div>
+            <div class="fakeButtons fakeMinimize"></div>
+            <div class="fakeButtons fakeZoom"></div>
+        </div>
+        <div class="fakeScreen">
+            <h2 id="modal-titulo"></h2>
+            <div class="modal-body">
+                <img id="modal-imagen" src="" alt="Producto" />
+                <div class="modal-texto">
+                    <p id="modal-precio"></p>
+                    <p id="modal-descripcion"></p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
     <script src="assets/js/script.js" type="module"></script>
 </body>
 <footer class="text-center">
     <div class="footer-content">
         <img src="assets/images/heart.gif" alt="" class="footer-logo">
-        <h2> AluraGeek</h2>
+        <h2 class="texto-movimiento"> AluraGeek</h2>
     </div>
     <p>Desarrollado por <a href="https://github.com/Valadxz">Juan Felipe Valadez Jiménez</a></p>
     <span>ALURA LATAM - 2024 </span>

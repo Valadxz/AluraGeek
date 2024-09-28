@@ -14,7 +14,8 @@ Utilizando HTML, CSS y JavaScript
 
 
 https://alura-geek-five-eosin.vercel.app
-![App Screenshot](https://i.ibb.co/DwynDz4/imagen-2024-09-27-203531796.png)## Color utilizados
+![App Screenshot](https://i.ibb.co/DwynDz4/imagen-2024-09-27-203531796.png)
+## Colores utilizados
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
